@@ -7,68 +7,23 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
     </head>
     <body>
-        <header class="header-bar">
-            <a id="mindx" href="https://mindx.edu.vn">MindX School</a>
-            <ul id="other-lick">
-                <li><a href="#About">About</a></li>
-                <li><a href="#Project">Project</a></li>
-                <li><a href="#Contact">Contact</a></li>
-                <li><a href="#Login" id="bt-login">Login</a></li>
-                <li><a href="#Sign Up" id="bt-signup">Sign Up</a></li>
-            </ul>            
-        </header>
-
-        <section id="About" class="About">
-            <h1>Hey I am mindXer</h1>
-            <h5>A fullstack web developer</h5>
-        </section>
-
-        <section id="Project" class="Project">
-            <h1 id="title">There are some of my projects</h1>
-            <div id=container>
-                <article>
-                    <img src="images/1.jpg" class="image-size"/>
-                    &lt;sample&gt;                    
-                </article>
-                <article>
-                    <img src="images/1.jpg" class="image-size"/>
-                    &lt;sample&gt;                    
-                </article>
-                <article>
-                    <img src="images/1.jpg" class="image-size"/>
-                    &lt;sample&gt;                    
-                </article>
-                <article>
-                    <img src="images/1.jpg" class="image-size"/>
-                    &lt;sample&gt;                    
-                </article>
-                <article>
-                    <img src="images/1.jpg" class="image-size"/>
-                    &lt;sample&gt;                    
-                </article>
-                <article>
-                    <img src="images/1.jpg" class="image-size"/>
-                    &lt;sample&gt;                    
-                </article>
+        <h1>Hello MinX!</h1>
+        <div id="main">
+            <div>Lucky Number</div>
+            <div id="forminputnum">
+                <div>
+                    <p>Dự đoán con số của bạn nằm trong khoảng từ 1 đến 10</p>
+                    <input id="numberInput" type="text" placeholder="nhập con số mà bạn dự đoán">
+                    <button onclick="luckyNumbe()">Quay số</button>
+                </div>
             </div>
-        </section>
-
-        <section id="Contact" class="Contact">
-            <h1>Let's work together...</h1>
-            <h6>How do you take your coffee?</h6>     
-            <ul id="contact">
-                <li class="contact-social-fb"><a href="https://www.facebook.com/thomson.supertramp.9"><i class="fab fa-facebook-square"></i>Facebook</a></li>
-                <li class="contact-social-gb"><a href="https://github.com/thanhsonnguyen-gif"><i class="fab fa-github"></i>Github</a></li>
-                <li class="contact-social-sm"><a href="#Send"><i class="fas fa-at"></i>Send a email</a></li>
-                <li class="contact-social-cm"><a href="#Call"><i class="fas fa-mobile-alt"></i>Call me</a></li>
-            </ul>       
-        </section>
-        <button id="back-to-top">
-            <a href="#">TOP</a>
-        </button>
+            <div id="congrat">Chuc mung ban da trung thuong</div>
+            <div id="condo">Con số may mắn là: <i id="luckynumber"></i> <br>
+                Chúc bạn may mắn lần sau!
+                <button onclick="backToInputNum()" >Quay số lại</button>
+            </div>
+            <div id="overload">Bạn đã vượt quá 3 lần quay, mời quay lại vào ngày mai</div>
+        </div>
+        <script src="js/index.js"></script>
     </body>
-    <footer>
-        <p>This is just a fake portforlio. All the contact and information is not real.</p>
-        <p>©Created for mindX Teachology School</p>
-    </footer>
 </html>
